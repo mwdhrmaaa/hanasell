@@ -280,6 +280,42 @@
             gap: 1rem;
         }
 
+        .category-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.4rem;
+        }
+
+        .category-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.65rem 1.2rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.08));
+            color: #fff;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .category-button:hover {
+            transform: translateY(-1px);
+            border-color: rgba(255, 255, 255, 0.55);
+        }
+
+        .category-button .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            display: inline-block;
+        }
+
         .btn-primary {
             background: var(--accent);
             color: #0f0f14;
@@ -961,6 +997,12 @@
                 <div class="hero-actions">
                     <a href="#produk" class="btn-primary">Lihat Koleksi</a>
                     <a href="#newsletter" class="btn-outline">Dapatkan Diskon 15%</a>
+                </div>
+                <div class="category-buttons" aria-label="Kategori produk">
+                    <a class="category-button" href="women.html"><span class="dot"></span> Womenswear</a>
+                    <a class="category-button" href="men.html"><span class="dot"></span> Menswear</a>
+                    <a class="category-button" href="kids.html"><span class="dot"></span> Kidswear</a>
+                    <a class="category-button" href="accessories.html"><span class="dot"></span> Aksesori</a>
                 </div>
             </div>
             <div class="hero-banner">
